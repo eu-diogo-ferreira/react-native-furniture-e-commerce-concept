@@ -16,6 +16,16 @@ const Stack = createStackNavigator();
 
 export default function App() {
   return (
-    <Home />
+    <NavigationContainer theme={theme}>
+      <Stack.Navigator
+        screenOptions={{
+          headerShown: false
+        }}
+        initialRouteName="Home"
+      >
+        <Stack.Screen name="Home" component={Home} />
+        <Stack.Screen name="ItemDetail" component={ItemDetail} />
+      </Stack.Navigator>
+    </NavigationContainer>
   );
 };
