@@ -1,4 +1,4 @@
-# React Native credit card interface
+# React Native furniture e-commerce concept
 
 <p>
   <!-- iOS -->
